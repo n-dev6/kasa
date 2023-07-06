@@ -1,10 +1,62 @@
-.Header {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+font-family: 'Montserrat', sans-serif;
+margin: 30px;
+}
+
+$primary-color: #ff6060;
+
+//Header//
+
+.header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
-  padding: 16px; 
+  padding: 16px;
+ 
+  margin-top: 15px !important;
+
   
   img {
     margin-right: 8px;
   }
+
+}
+  .active-link {
+  color:white;
+  text-decoration: none !important; /* Ajoutez cette ligne pour supprimer le soulignement */
+  }
+
+.header-right{
+  display: flex;
+  justify-content: flex-end;
+    a {
+    color: $primary-color;
+      font-size: 24px;
+      font-weight: 500;
+    }
+ 
+  }
+  
+//Banner//
+.banner{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
+  position: relative;
+  margin: 0 auto;
+  margin-top:3%
+
+}
+
+.banner-image{
+  width:95%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:15px;
+  filter: grayscale(40%);
+
 }
