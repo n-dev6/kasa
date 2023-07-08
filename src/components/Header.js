@@ -9,11 +9,11 @@ class Header extends Component {
       <div className='header'>
         <img src={Logo} alt='Logo' />
         <ul className='header-right'>
-          <NavLink exact to="/" style={{ marginRight: '50px', marginLeft: '-10px', textDecoration: window.location.pathname === "/" ? 'underline' : 'none' }}>
+          <NavLink to="/" style={{ marginRight: '50px', marginLeft: '-10px', textDecoration: window.location.pathname === "/" ? 'underline' : 'none' }}>
             Accueil
           </NavLink>
-          <NavLink to="/About" style={{ marginRight: '30px', marginLeft: '10px', textDecoration: window.location.pathname === "/About" ? 'underline' : 'none' }}>
-            À propos
+          <NavLink to="/About" style={{ marginRight: '40px', marginLeft: '10px', textDecoration: window.location.pathname === "/About" ? 'underline' : 'none' }}>
+            A Propos
           </NavLink>
         </ul>
       </div>
