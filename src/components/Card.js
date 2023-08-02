@@ -1,19 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class Card extends Component {
   render() {
-    const { data, onClick } = this.props;
-    const { id, title, cover } = data;
+    const { data } = this.props
+    const { id, title, cover } = data
 
     return (
-      <div className="card" onClick={() => onClick(id)}>
-        <img src={cover} alt={title} />
-        <div class='overlay'>
-        <h2>{title}</h2>
+      <Link to={`/Logement/${id}`}>
+        <div className="card">
+          <img src={cover} alt={title} />
+          <div className="overlay">
+            <h2>{title}</h2>
+          </div>
         </div>
-      </div>
-    );
+      </Link>
+    )
   }
 }
 
-export default Card;
+export default Card

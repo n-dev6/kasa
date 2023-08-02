@@ -10,7 +10,7 @@ class Banner extends Component {
     return (
       <div className="banner">
         <img src={image} alt="Banner" className="banner-image" />
-        <div className="banner-text">{text}</div>
+        <h2 className="banner-text">{text}</h2>
       </div>
     );
   }
