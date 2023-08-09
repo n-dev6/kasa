@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import MountainPng from '../assets/Mountain.png';
-import SeaPng from '../assets/Sea.png';
 
 
 class Banner extends Component {

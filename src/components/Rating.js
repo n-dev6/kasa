@@ -8,9 +8,9 @@ const MonComposant = ({ rating }) => {
     const stars = [];
     for (let i = 1; i <= maxRating; i++) {
       if (i <= rating) {
-        stars.push(<FontAwesomeIcon key={i} icon={solidStar} style={{ color: '#ff6060' }} />);
+        stars.push(<FontAwesomeIcon key={i} icon={solidStar} className='active'  />);
       } else {
-        stars.push(<FontAwesomeIcon key={i} icon={solidStar} style={{ color: 'gray' }} />);
+        stars.push(<FontAwesomeIcon key={i} icon={solidStar} />);
       }
     }
     return stars;

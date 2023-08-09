@@ -2,7 +2,6 @@
 import Slider from '../components/Slider'
 import Header from '../components/Header'
 import Dropdown from '../components/Dropdown'
-import DescriptionHeader from '../components/DescriptionHeader'
 import React, { Component } from 'react'
 import logementsData from '../components/data.json'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
@@ -31,7 +30,6 @@ class Logement extends Component {
          tags,
          pictures,
          host,
-         
       } = logement
       const dropdownWidth = '555px'
 
@@ -44,18 +42,18 @@ class Logement extends Component {
                <div className="logement-description">
                   <h1>{title}</h1>
                   <div className="logement-description-row">
-                     <p>{location}</p> 
+                     <p>{location}</p>
                   </div>
                   <div className="logement-description-right">
-                        <div className="name-profile">
-                           {host.name}
-                           <img className="circle" src = {host.picture}></img>
-                        </div>
-                        <span>
-                           {' '}
-                           <Rating rating={rating} />
-                        </span>
+                     <div className="name-profile">
+                        {host.name}
+                        <img className="circle" src={host.picture}></img>
                      </div>
+                     <span>
+                        {' '}
+                        <Rating rating={rating} />
+                     </span>
+                  </div>
                   <div className="tags-container">
                      {tags.map((tag, index) => (
                         <span key={`tag-${index}`} className="tag">
@@ -78,9 +76,8 @@ class Logement extends Component {
                      />
                   </div>
                </div>
-               
             </div>
-            <Footer/>
+            <Footer />
          </>
       )
    }

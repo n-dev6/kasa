@@ -8,7 +8,7 @@ function About() {
    return (
       <>
          <Header />
-         <Banner style={{ marginBottom: '2%' }} image={MountainPng} />
+         <Banner  image={MountainPng} />
          <div className="dropdown-container-about">
             <Dropdown
                title="Fiabilité "

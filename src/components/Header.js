@@ -11,22 +11,16 @@ class Header extends Component {
         <ul className="header-right">
           <NavLink
             to="/"
-            style={{
-              marginRight: '50px',
-              marginLeft: '-10px',
-              textDecoration:
-                window.location.pathname === '/' ? 'underline' : 'none',
+            className={{
+              active:window.location.pathname === '/'
             }}
           >
             Accueil
           </NavLink>
           <NavLink
             to="/About"
-            style={{
-              marginRight: '40px',
-              marginLeft: '10px',
-              textDecoration:
-                window.location.pathname === '/About' ? 'underline' : 'none',
+            className={{
+              active:window.location.pathname === '/About'
             }}
           >
             A Propos

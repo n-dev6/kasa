@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <img src={logoFooter} alt="logo" />
-        <p style={{ color: 'white', fontSize: '20px' }}>
+        <p className='footer-logo'>
           © 2020 Kasa. All rights reserved
         </p>
       </div>
