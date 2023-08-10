@@ -214,7 +214,7 @@ h3{
 //SLIDER DESCRIPTION//
 .logement-description{
   display: flex;
-    margin-left: 50px;
+   margin-left: 3%;
     flex-direction: column;
     color:#ff6060;
     gap: -20px;
@@ -409,7 +409,7 @@ h3{
 }
 
 
-/* Pour les écrans de 1024px à 1279px */
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
   .card-container {
@@ -421,7 +421,7 @@ h3{
     justify-content: center;
     margin-top: 3%;
     }
-  }
+  
   .header{
     margin-inline: 0%;
   }
@@ -434,14 +434,22 @@ h3{
     
   
   }
+  .logement-description h1{
+    width: 80%;
+}
+.slider-counter-container {
+
+  bottom: 236px;
+}
+
+}
 
   @media screen and (min-width: 1200px) {
     .card-container{
       grid-template-columns: repeat(3, 420px);
       gap: 60px;
-      
-
     }
+    
     .card{
       height: 400px;
     }
@@ -466,6 +474,12 @@ h3{
   flex-direction: column;
   align-items: center;
  }
+ .logement-description{
+
+    margin-left: 29px;
+
+    
+}
  .card-container{
   margin: 29px;
  }
@@ -547,6 +561,7 @@ h3{
 }
 .logement-description{
   width: 100%;
+  margin-left: 35px;
 }
 .slider img {
   width: 86%;
@@ -583,7 +598,7 @@ h3{
   font-size: 64px;
 }
 .logement-description {
-  margin-left: 35px;
+  margin-left: 5%;
   width: 92%;
 
 }
