@@ -8,7 +8,7 @@ function About() {
    return (
       <>
          <Header />
-         <Banner  image={MountainPng} />
+         <Banner  image={MountainPng} additionnalBannerClassName ='about-banner' />
          <div className="dropdown-container-about">
             <Dropdown
                title="Fiabilité "
