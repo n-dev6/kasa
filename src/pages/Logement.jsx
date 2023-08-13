@@ -10,6 +10,9 @@ import ErrorPage from './404'
 import Footer from '../components/Footer'
 
 class Logement extends Component {
+   componentDidMount() {
+      window.scrollTo(0, 0);
+   }
    render() {
       const url = window.location.href
       const id = url.substring(url.lastIndexOf('/') + 1)
@@ -36,7 +39,6 @@ class Logement extends Component {
       return (
          <>
             <Header />
-
             <div className="app-container">
                <Slider images={pictures} />
                <div className="logement-description">
