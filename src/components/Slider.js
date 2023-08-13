@@ -17,6 +17,14 @@ const Slider = ({ images }) => {
 
   const currentImageNumber = currentImageIndex + 1;
   const totalImages = images.length;
+  
+  if (totalImages === 1) {
+    return (
+      <div className="slider">
+        <img src={images[0]} alt={`Image ${currentImageNumber}`} />
+      </div>
+    );
+  }
 
   return (
     <div className="slider">
