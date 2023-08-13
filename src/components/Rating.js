@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
 
-const MonComposant = ({ rating }) => {
+const RatingComposant = ({ rating }) => {
   const maxRating = 5; 
   const getRatingStars = () => {
     const stars = [];
@@ -23,4 +23,4 @@ const MonComposant = ({ rating }) => {
   );
 };
 
-export default MonComposant;
+export default RatingComposant;
