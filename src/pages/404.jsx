@@ -5,7 +5,7 @@ import Home from './Home'
 
 function ErrorPage() {
   return (
-    <div>
+    <>
       <Header/>
       <div className='error-page'>
         <span className='error404'>404</span>
@@ -13,7 +13,7 @@ function ErrorPage() {
         <a href= '/'>Retourner sur la page d'acceuil</a>
       </div>
       <Footer/>
-    </div>
+    </>
   );
 }
 
