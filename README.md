@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+Objet : Fonctionnalité et design
+De : Paul
+À : Moi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Salut,
 
-## Available Scripts
+Bienvenue parmi nous ! Laura m’a dit de te briefer sur le design de la nouvelle version du site, alors voici les infos clés.
 
-In the project directory, you can run:
+Design
 
-### `npm start`
+Voici les maquettes sur Figma pour le design d’interface. J’ai l’habitude de travailler avec la logique de composants sur Figma ; Sandra m’a dit que ça te faciliterait le travail sur React. Tu trouveras toutes les ressources dont tu as besoin directement dans la maquette (logo, icônes pour les composants, etc.). Pour cela, il suffit de cliquer sur la ressource souhaitée et de faire "Exporter" au format voulu.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pour avoir un rendu le plus réaliste possible de l'application, utilise les prototypes du site disponibles ici. Ils te permettront notamment de voir les animations attendues sur les menus déroulants (Collapse).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ 
 
-### `npm test`
+Contraintes fonctionnelles
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Quelques précisions sur les fonctionnalités du site :
 
-### `npm run build`
+Pour le défilement des photos dans la galerie (composant Gallery) :
+Si l'utilisateur se trouve à la première image et qu'il clique sur "Image précédente", la galerie affiche la dernière image. 
+Inversement, quand l'image affichée est la dernière de la galerie, si l'utilisateur clique sur "Image suivante", la galerie affiche la première image. 
+S'il n'y a qu'une seule image, les boutons "Suivant" et "Précédent" ainsi que la numérotation n'apparaissent pas.
+La galerie doit toujours rester de la même hauteur, celle indiquée sur la maquette Figma. Les images seront donc coupées et centrées dans le cadre de l’image.
+Collapse : Par défaut, les Collapses sont fermés à l'initialisation de la page. 
+Si le Collapse est ouvert, le clic de l'utilisateur permet de le fermer.
+Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bon courage pour le développement, j’ai hâte de voir ce que ça va donner !
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Paul
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Objet : Brief refonte site Kasa
+De : Laura
+À : Moi
 
-### `npm run eject`
+Hello,
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Bienvenue pour ton premier jour !
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+On est vraiment ravis de te compter parmi nous !
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Tu vas pouvoir nous aider à donner vie à un chantier sur lequel on travaille depuis plusieurs mois.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Je préfère te mettre par écrit quelques éléments de contexte qui t'aideront à te projeter dans ta mission avant notre point de jeudi.
 
-## Learn More
+ 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ton objectif : Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !) et toutes les infos que je te donne ci-dessous. Et ce avec un code de qualité ! 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Back-end / data : Le recrutement de la personne en charge du back-end n'est pas terminé et va prendre plus de temps que prévu. Du coup, il va falloir que tu fasses sans pour le moment. Je t'ai extrait les 20 dernières annonces de logements dans ce fichier JSON pour que tu puisses construire le Front qui correspond.
 
-### Code Splitting
+Contraintes techniques : Tu trouveras les coding guidelines de Kasa ici. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Voilà, j'espère que ce petit récapitulatif t'aura donné suffisamment de pistes pour aborder sereinement tes premiers jours chez nous.
 
-### Analyzing the Bundle Size
+Très bonne journée à toi !
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Laura
