@@ -12,7 +12,9 @@ function ErrorPage() {
         <h1>Oups! La page que vous demandez n'existe pas.</h1>
         <a href= '/'>Retourner sur la page d'acceuil</a>
       </div>
+      <div className='footer-404'>
       <Footer/>
+      </div>
     </>
   );
 }
